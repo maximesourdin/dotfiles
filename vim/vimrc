@@ -6,11 +6,36 @@
 "    By: msourdin <marvin@42.fr>                    +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2016/03/02 14:57:41 by msourdin          #+#    #+#              "
-"    Updated: 2016/03/02 15:02:48 by msourdin         ###   ########.fr        "
+"    Updated: 2016/03/02 16:27:42 by msourdin         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
+" Colored column at 80
+set colorcolumn=80
+" File type detection
 filetype on
+" Loading the indent file for specific file types
+filetype indent on
+" Syntax highlighting
 syntax on
+" Vim theme
 colorscheme Tomorrow-Night
+" Display line numbers
 set number
+" Don't wrap lines
+set nowrap
+" Highlight found words
+set hlsearch
+" Enable mouse
+set mouse=a
+
+set nobackup
+set noswapfile
+
+" set hidden
+" set history=100
+" set tabstop=4
+" set shiftwidth=2
+" set expandtab
+" set smartindent
+" set autoindent
