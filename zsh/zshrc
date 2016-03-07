@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+
+# Completion
+autoload -U compinit
+compinit
+autoload -U promptinit
+promptinit
+
+# Correction
+setopt correctall
+
+# Alias
+alias ls="ls -G"
+alias la="ls -la"
+
+# Prompt theme
+autoload -U colors && colors
+PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m%{$reset_color%}:%{$fg_no_bold[yellow]%}%~ %{$reset_color%}%# "
+
