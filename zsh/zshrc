@@ -9,6 +9,11 @@ promptinit
 # Correction
 # setopt correctall
 
+# History
+HISTFILE=~/.history
+SAVEHIST=10000
+HISTSIZE=10000
+
 # Alias
 alias ls="ls -G"
 alias la="ls -la"
