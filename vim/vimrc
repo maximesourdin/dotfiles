@@ -6,14 +6,32 @@
 "    By: msourdin <marvin@42.fr>                    +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2016/03/02 14:57:41 by msourdin          #+#    #+#              "
-"    Updated: 2016/03/15 08:34:23 by msourdin         ###   ########.fr        "
+"    Updated: 2016/03/30 15:20:11 by msourdin         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
+
+" Vundle
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" Set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " Colored column at 80
 set colorcolumn=80
 " File type detection
-filetype on
+filetype off
 " Loading the indent file for specific file types
 filetype indent on
 " Syntax highlighting
@@ -33,6 +51,20 @@ set cursorline
 
 set nobackup
 set noswapfile
+
+" autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
 
 " set hidden
 " set history=100
