@@ -6,7 +6,7 @@
 "    By: msourdin <marvin@42.fr>                    +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2016/03/02 14:57:41 by msourdin          #+#    #+#              "
-"    Updated: 2016/03/30 15:20:11 by msourdin         ###   ########.fr        "
+"    Updated: 2016/03/30 15:53:21 by msourdin         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -54,6 +54,8 @@ set noswapfile
 
 " autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+let g:airline#extensions#tabline#enabled = 1
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
