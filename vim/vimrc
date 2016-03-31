@@ -6,7 +6,7 @@
 "    By: msourdin <marvin@42.fr>                    +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2016/03/02 14:57:41 by msourdin          #+#    #+#              "
-"    Updated: 2016/03/31 09:16:23 by msourdin         ###   ########.fr        "
+"    Updated: 2016/03/31 09:56:23 by msourdin         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -24,6 +24,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,7 +35,7 @@ filetype plugin indent on    " required
 " Colored column at 80
 set colorcolumn=80
 " File type detection
-filetype off
+filetype on
 " Loading the indent file for specific file types
 filetype indent on
 " Syntax highlighting
