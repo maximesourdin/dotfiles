@@ -6,11 +6,11 @@
 "    By: msourdin <marvin@42.fr>                    +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2016/03/02 14:57:41 by msourdin          #+#    #+#              "
-"    Updated: 2016/03/30 15:53:21 by msourdin         ###   ########.fr        "
+"    Updated: 2016/03/31 08:19:02 by msourdin         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
-" Vundle
+" ## VUNDLE ##
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -27,6 +27,8 @@ Plugin 'vim-airline/vim-airline-themes'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+" ## OPTIONS ##
 
 " Colored column at 80
 set colorcolumn=80
@@ -52,10 +54,16 @@ set cursorline
 set nobackup
 set noswapfile
 
+" ## PLUGINS OPTIONS ##
+
+" NerdTree
 " autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
+" Airline
 let g:airline#extensions#tabline#enabled = 1
+
+" ## KEY MAPPING ##
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -67,11 +75,3 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
-
-" set hidden
-" set history=100
-" set tabstop=4
-" set shiftwidth=2
-" set expandtab
-" set smartindent
-" set autoindent
