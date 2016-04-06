@@ -17,8 +17,9 @@ HISTSIZE=10000
 # Alias
 alias ls="ls -G"
 alias la="ls -la"
+alias tree="~/dotfiles/tree"
+alias tr="~/dotfiles/tree"
 
 # Prompt theme
 autoload -U colors && colors
 PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m%{$reset_color%}:%{$fg_no_bold[yellow]%}%~ %{$reset_color%}%# "
-
