@@ -11,14 +11,14 @@
 " **************************************************************************** "
 
 " ## VUNDLE ##
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible              " be iMproved, reuired
+filetype off                  " reuired
 
 " Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Let Vundle manage Vundle, required
+" Let Vundle manage Vundle, reuired
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
@@ -27,11 +27,16 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
+call vundle#end()            " reuired
+filetype plugin indent on    " reuired
 " ## OPTIONS ##
 
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
 " Colored column at 80
 set colorcolumn=80
 " File type detection
