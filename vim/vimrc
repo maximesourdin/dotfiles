@@ -6,7 +6,7 @@
 "    By: msourdin <marvin@42.fr>                    +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2016/03/02 14:57:41 by msourdin          #+#    #+#              "
-"    Updated: 2016/03/31 09:56:23 by msourdin         ###   ########.fr        "
+"    Updated: 2016/04/11 10:39:37 by msourdin         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -67,13 +67,4 @@ let g:airline#extensions#tabline#enabled = 1
 
 " ## KEY MAPPING ##
 
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-nnoremap j gj
-nnoremap k gk
+
