@@ -6,7 +6,7 @@
 "    By: msourdin <marvin@42.fr>                    +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2016/03/02 14:57:41 by msourdin          #+#    #+#              "
-"    Updated: 2016/03/31 09:56:23 by msourdin         ###   ########.fr        "
+"    Updated: 2016/04/11 10:39:37 by msourdin         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -36,7 +36,7 @@ set tabstop=4
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
-set expandtab
+" set expandtab
 " Colored column at 80
 set colorcolumn=80
 " File type detection
@@ -46,7 +46,7 @@ filetype indent on
 " Syntax highlighting
 syntax on
 " Vim theme
-colorscheme Tomorrow-Night
+colorscheme mod8
 " Display line numbers
 set number
 " Don't wrap lines
@@ -71,14 +71,6 @@ map <C-n> :NERDTreeToggle<CR>
 let g:airline#extensions#tabline#enabled = 1
 
 " ## KEY MAPPING ##
+hi Visual ctermbg=Red ctermfg=Black
+" hi Visual ctermbg=152 ctermfg=Magenta
 
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-nnoremap j gj
-nnoremap k gk
